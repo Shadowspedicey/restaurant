@@ -1,0 +1,83 @@
+html,body
+{
+  height: 100%;
+  margin: 0;
+}
+
+#content
+{
+  height: 100%;
+}
+
+#navbar
+{
+  background-color: #55789e;
+  width: 100%;
+  height: 15%;
+
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+}
+
+#img-logo-div
+{
+  height: 80%;
+
+  margin-left: 2rem;
+}
+
+#img-logo-div img
+{
+  height: 100%;
+}
+
+#navbar h2
+{
+  color: #D2B598;
+  font-size: 4em;
+  font-family: "Sundaycoffee";
+  user-select: none;
+
+  margin-left: 1.25rem;
+}
+
+#header::before
+{
+  content: "";
+
+  background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F01%2F18%2Fstarbucks-smoked-butterscotch-latte-2000.jpg);
+  background-size: cover;
+  background-position: 50% 0%;
+  width: 100%;
+  height: 85vh;
+  
+  position: absolute;
+  top: 15%;
+  z-index: -5;
+}
+
+#header
+{
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header h1
+{
+  color: hsl(155, 100%, 27%);
+  font-size: 6em;
+  
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Sundaycoffee";
+  src: url(fonts/Sundaycoffee-X3JKg.ttf);
+}
