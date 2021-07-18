@@ -1,6 +1,5 @@
 html,body
 {
-  height: 100%;
   margin: 0;
 }
 
@@ -49,7 +48,9 @@ html,body
 
   background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2018%2F01%2F18%2Fstarbucks-smoked-butterscotch-latte-2000.jpg);
   background-size: cover;
-  background-position: 50% 0%;
+  background-position: 50% 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   width: 100%;
   height: 85vh;
   
@@ -72,12 +73,58 @@ html,body
 #header h1
 {
   color: hsl(155, 100%, 27%);
-  font-size: 6em;
-  
+  font-size: 5.5vw;
+  font-family: "CoffeeWithSugar";
+
   margin: 0;
+}
+
+#menubar
+{
+  background-color: #D2B598;
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menubar ul
+{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0;
+}
+
+#menubar ul li
+{
+  height: 40px;
+
+  color: black;
+  font-size: 3em;
+  font-family: "kuffie";
+
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.selected
+{
+  text-decoration: underline;
 }
 
 @font-face {
   font-family: "Sundaycoffee";
-  src: url(fonts/Sundaycoffee-X3JKg.ttf);
+  src: url(./fonts/Sundaycoffee-X3JKg.ttf);
+}
+@font-face {
+  font-family: "CoffeeWithSugar";
+  src: url(./fonts/Coffee\ with\ Sugar.ttf);
+}
+@font-face {
+  font-family: "kuffie";
+  src: url(./fonts/kuffie-free.regular.ttf);
 }
