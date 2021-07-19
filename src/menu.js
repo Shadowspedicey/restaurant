@@ -27,7 +27,6 @@ const PricesMenu = (() =>
       header.appendChild(headerPriceH2);
       mainDiv.appendChild(header);
 
-
       for (let i = 0; i < drinks.length; i++)
       {
         let div = document.createElement("div");

@@ -1,5 +1,6 @@
 import CreateReviewsWindow from "./reviews.js";
 import CreatePricesMenuWindow from "./menu.js";
+import CreateContactWindow from "./contact.js";
 
 const content = document.querySelector("#content");
 
@@ -103,7 +104,7 @@ const mainPage = (function ()
               break;
           
             case "Contact":
-              //TODO: CONTACT
+              CreateContactWindow();
               break;
           }
         });
