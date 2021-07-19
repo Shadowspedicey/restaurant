@@ -41,7 +41,6 @@ const mainPage = (function ()
 
     const createMenuBar = (() =>
     {
-      console.log("a7a");
       const menubar = document.createElement("div");
       menubar.id = "menubar";
 
@@ -73,6 +72,13 @@ const mainPage = (function ()
       menuWindow.id = "menu-window";
       content.appendChild(menuWindow);
     })();
+
+    const createFooter = (() =>
+    {
+      const footer = document.createElement("footer");
+      footer.innerHTML = "&copy Created by Shadowspedicey for The Odin Project";
+      content.appendChild(footer);
+    })()
   })();
 
   const _menuWindow = document.querySelector("#menu-window");

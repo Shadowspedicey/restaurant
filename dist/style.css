@@ -249,6 +249,20 @@ iframe
   width: 100%;
 }
 
+footer
+{
+  background-color: #D2B598;
+  height: 10vh;
+
+  font-size: 1.5em;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 4vw;
+}
+
 @font-face {
   font-family: "Sundaycoffee";
   src: url(./fonts/Sundaycoffee-X3JKg.ttf);
