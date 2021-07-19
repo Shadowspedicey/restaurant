@@ -1,4 +1,5 @@
-import CreateReviewsWindow from "./reviews.js"
+import CreateReviewsWindow from "./reviews.js";
+import CreatePricesMenuWindow from "./menu.js";
 
 const content = document.querySelector("#content");
 
@@ -98,8 +99,7 @@ const mainPage = (function ()
               break;
             
             case "Menu":
-              const div = document.createElement("div");
-              _menuWindow.appendChild(div);
+              CreatePricesMenuWindow();
               break;
           
             case "Contact":

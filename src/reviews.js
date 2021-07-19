@@ -24,7 +24,7 @@ const Reviews = (() =>
     (function()
     {
       const mainDiv = document.createElement("div");
-      mainDiv.id = "reviews-window"
+      mainDiv.id = "reviews-window";
 
       for (let i = 0; i < 4; i++)
       {
