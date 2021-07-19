@@ -3,6 +3,11 @@ html,body
   margin: 0;
 }
 
+.selected
+{
+  text-decoration: underline;
+}
+
 #content
 {
   height: 100%;
@@ -72,7 +77,7 @@ html,body
 
 #header h1
 {
-  color: hsl(155, 100%, 27%);
+  color: #008a50;
   font-size: 5.5vw;
   font-family: "CoffeeWithSugar";
 
@@ -111,9 +116,54 @@ html,body
   list-style-type: none;
 }
 
-.selected
+#menu-window
 {
-  text-decoration: underline;
+  background-color: #55789e;
+}
+
+#reviews-window
+{
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 44rem);
+  gap: 5em;
+  justify-content: center;
+
+  padding: 4rem 0;
+}
+
+.review
+{
+  background-color: #008a50;
+  height: 22rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  box-shadow: 0 0 17px 5px black;
+  border-radius: 150px;
+}
+
+.review p
+{
+  font-size: 4em;
+  font-family: "luthfya";
+  line-height: 0.8;
+
+  margin: 6rem 6rem 0 6rem;
+}
+
+.review span
+{
+  font-size: 0.8em;
+  font-family: "cheerful-dynamite";
+
+  align-self: flex-end;
+
+  margin: 3rem 5rem;
 }
 
 @font-face {
@@ -127,4 +177,12 @@ html,body
 @font-face {
   font-family: "kuffie";
   src: url(./fonts/kuffie-free.regular.ttf);
+}
+@font-face {
+  font-family: "luthfya";
+  src: url(./fonts/luthfya.regular.ttf);
+}
+@font-face {
+  font-family: "cheerful-dynamite";
+  src: url(./fonts/cheerful-dynamite-personal-use.regular.ttf);
 }
