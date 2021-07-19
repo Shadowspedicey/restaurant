@@ -14,6 +14,12 @@ const Reviews = (() =>
   const CreateReviewsWindow = () =>
   {
     const menuWindow = document.querySelector("#menu-window");
+    
+    (function ()
+    {
+      const __reviews = document.querySelector("#reviews");
+      __reviews.classList.add("selected");
+    })();
 
     (function()
     {

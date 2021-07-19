@@ -90,7 +90,6 @@ const mainPage = (function ()
         {
           ClearUnderline();
           ClearMenuWindow();
-          element.classList.add("selected");
 
           switch (element.textContent)
           {
