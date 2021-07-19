@@ -106,10 +106,10 @@ html,body
 
 #menubar ul li
 {
-  height: 40px;
+  height: 0.9em;
 
   color: black;
-  font-size: 3em;
+  font-size: 3.75em;
   font-family: "kuffie";
 
   cursor: pointer;
@@ -164,6 +164,44 @@ html,body
   align-self: flex-end;
 
   margin: 3rem 5rem;
+}
+
+#prices-window
+{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#prices-header
+{
+  width: 45%;
+
+  display: flex;
+  justify-content: space-between;
+}
+#prices-header h2
+{
+  color: white;
+  font-size: 3.5em;
+
+  margin: 1rem;
+}
+
+.drink
+{
+  width: 45%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.drink h2
+{
+  font-size: 2em;
+
+  margin: 1rem;
 }
 
 @font-face {
