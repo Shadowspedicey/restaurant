@@ -1,3 +1,5 @@
+import CreateReviewsWindow from "./reviews.js"
+
 const content = document.querySelector("#content");
 
 const mainPage = (function ()
@@ -64,12 +66,21 @@ const mainPage = (function ()
       menubar.appendChild(ul);
 
       content.appendChild(menubar);
+
+      const menuWindow = document.createElement("div");
+      menuWindow.id = "menu-window";
+      content.appendChild(menuWindow);
     })();
   })();
 
+  const _menuWindow = document.querySelector("#menu-window");
   const _menuElements = document.querySelectorAll(".menuElement");
-
   const ClearUnderline = () => _menuElements.forEach(element => element.classList.remove("selected"));
+
+  const ClearMenuWindow = () =>
+  {
+    _menuWindow.children[0].remove();
+  }
 
   const AddEventListeners = (() =>
   {
@@ -78,8 +89,27 @@ const mainPage = (function ()
         element.addEventListener("click", () =>
         {
           ClearUnderline();
+          ClearMenuWindow();
           element.classList.add("selected");
+
+          switch (element.textContent)
+          {
+            case "Reviews":
+              CreateReviewsWindow();
+              break;
+            
+            case "Menu":
+              const div = document.createElement("div");
+              _menuWindow.appendChild(div);
+              break;
+          
+            case "Contact":
+              //TODO: CONTACT
+              break;
+          }
         });
       });
   })();
 })()
+
+CreateReviewsWindow();
