@@ -283,3 +283,11 @@ footer
   font-family: "cheerful-dynamite";
   src: url(./fonts/cheerful-dynamite-personal-use.regular.ttf);
 }
+
+@media (max-width:1000px)
+{
+  html
+  {
+    font-size: 2em;
+  }
+}
