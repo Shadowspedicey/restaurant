@@ -284,7 +284,7 @@ footer
   src: url(./fonts/cheerful-dynamite-personal-use.regular.ttf);
 }
 
-@media (max-width:1000px)
+@media (max-device-width:1000px)
 {
   html
   {
